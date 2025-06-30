@@ -6,7 +6,7 @@ A powerful and user-friendly web application for solving **ordinary differential
 
 ## 🚀 Live Demo
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg
+[![Open in Streamlit]([https://static.streamlit.io/badges/streamlit_badge_black_white.svg](https://ordinary-differential-equation-solver-version-1.streamlit.app)
 
 - **Supports ODEs of any order:** Enter your ODE as a system of first-order equations.
 - **Multiple numerical methods:**  

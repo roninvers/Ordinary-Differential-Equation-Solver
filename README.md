@@ -30,7 +30,7 @@ A powerful and user-friendly web application for solving **ordinary differential
 ## Usage
 
 1. **Enter your ODE system** as a Python lambda function.  
-   Example for $$ y'' = -y $$:  
+   Example for y'' = -y :  
    ```python
    lambda t, X: [X[1], -X[0]]
    ```

@@ -6,14 +6,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-st.set_page_config(page_title="ODE Solver", layout="centered", page_icon="📈")
-st.title("📈 ODE Solver: Widely-Used Numerical Methods")
+st.set_page_config(page_title="ODE Solver", layout="centered", page_icon="")
+st.title(" ODE Solver: Widely-Used Numerical Methods")
 
 st.sidebar.header("Instructions & Input Format")
 st.sidebar.markdown("""
 - **Express your ODE (any order) as a system of first-order ODEs.**
     - For nth-order ODE, define:
-      x₀ = y, x₁ = y', x₂ = y'', ..., xₙ₋₁ = y⁽ⁿ⁻¹⁾
+      x0 = y, x1 = y', x2 = y'', ..., xn-1 = y(n-1)
     - Example for y'' = -y:
       `lambda t, X: [X[1], -X[0]]`
 - **Initial conditions:** comma-separated, e.g. `1, 0` for y(0)=1, y'(0)=0
@@ -52,22 +52,22 @@ try:
     y0 = [float(x.strip()) for x in y0_str.split(",")]
     n = len(y0)
 except Exception:
-    st.error("❌ Invalid initial conditions. Use comma-separated numbers.")
+    st.error(" Invalid initial conditions. Use comma-separated numbers.")
     st.stop()
 
 try:
     f = eval(ode_input)
     test_output = f(0, np.zeros(n))
     if len(test_output) != n:
-        st.error(f"❌ ODE function must return {n} derivatives (got {len(test_output)})")
+        st.error(f" ODE function must return {n} derivatives (got {len(test_output)})")
         st.stop()
 except Exception as e:
-    st.error(f"❌ Invalid ODE function: {str(e)}")
+    st.error(f" Invalid ODE function: {str(e)}")
     st.stop()
 
 n_steps = int(np.ceil((t_final - t0) / h))
 if n_steps <= 0:
-    st.error("❌ Invalid time interval or step size")
+    st.error(" Invalid time interval or step size")
     st.stop()
 
 # ====== NUMERICAL METHODS ======

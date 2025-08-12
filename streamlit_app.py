@@ -13,7 +13,7 @@ st.sidebar.header("Instructions & Input Format")
 st.sidebar.markdown("""
 - **Express your ODE (any order) as a system of first-order ODEs.**
     - For nth-order ODE, define:
-      x0 = y, x1 = y', x2 = y'', ..., xn-1 = y(n-1)
+      x0, x1, x2, ..., xn_minus_1 = y, y_prime, y_double_prime, ..., y_n_minus_1
     - Example for y'' = -y:
       `lambda t, X: [X[1], -X[0]]`
 - **Initial conditions:** comma-separated, e.g. `1, 0` for y(0)=1, y'(0)=0

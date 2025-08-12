@@ -16,7 +16,7 @@ st.sidebar.markdown("""
       x0, x1, x2, ..., xn_minus_1 = y, y_prime, y_double_prime, ..., y_n_minus_1
     - Example for y'' = -y:
       `lambda t, X: [X[1], -X[0]]`
-- **Initial conditions:** comma-separated, e.g. `1, 0` for y(0)=1, y'(0)=0
+- **Initial conditions:** comma-separated, e.g. 1, 0 for y(0)=1, y_prime(0)=0
 """)
 
 methods = [

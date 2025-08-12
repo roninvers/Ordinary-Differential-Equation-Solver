@@ -276,11 +276,11 @@ st.dataframe(df.style.format("{:.6f}"), height=300)
 
 st.subheader("Numerical Methods Comparison")
 st.markdown("""
-| Method                           | Order | Stability      | Famous Applications                                   |
+| Method                           | Order | Stability      | Famous Applications                                  |
 |----------------------------------|-------|----------------|------------------------------------------------------|
 | Euler Method                     | 1     | Conditional    | Education, simple simulations                        |
-| Runge-Kutta 2nd Order            | 2     | Conditional    | Real-time systems, game physics                      |
-| Runge-Kutta 4th Order            | 4     | Conditional    | Engineering, aerospace, robotics                     |
+| Runge-Kutta Second Order         | 2     | Conditional    | Real-time systems, game physics                      |
+| Runge-Kutta Fourth Order         | 4     | Conditional    | Engineering, aerospace, robotics                     |
 | RKF45 (Adaptive)                 | 4-5   | Adaptive       | Aerospace, scientific computing                      |
 | Adams-Bashforth (Explicit)       | 2-6   | Conditional    | Climate modeling, fluid dynamics                     |
 | Adams-Moulton (Implicit)         | 2-6   | Unconditional  | Circuit simulation, control systems                  |
